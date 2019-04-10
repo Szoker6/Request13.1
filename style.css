@@ -2,12 +2,12 @@ div {
     opacity: 0.7;
     margin-bottom: 10px
 }
-div.highlighted {
+.highlighted {
     background-color: cadetblue;
 }
-div.special-header {
+.special-header {
     background-color: rgb(191, 144, 235);
 }
-div.important {
+.important {
     opacity: 1;
 }
