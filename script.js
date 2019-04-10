@@ -30,29 +30,24 @@
             id: "box5",
             title: "Fifth box",
             content: "Lorem ipsum dolor sit amet!5",
-            categories: [""]
+            categories: []
         }
     ];
    
-
     for (let i = 0; i < data.length; i++) {
         
-        var currentArrayElement = data[i]; 
-        var header = document.createElement('header');
+        var currentArrayElement = data[i];    
         var div = document.createElement('div');
         div.setAttribute('id', currentArrayElement.id);
         
         for (let j = 0; j < currentArrayElement.categories.length; j++) {   
             var currentCategories = currentArrayElement.categories[j];  
-        
-            console.log('1', currentCategories);
-            div.setAttribute('class', currentCategories);
-            
-        }
-    
-        
-        var headerContent = document.createTextNode(currentArrayElement.title);
-    
+            console.log('class', currentCategories);
+            div.classList.add(currentCategories);
+       }
+
+        var header = document.createElement('header');
+        var headerContent = document.createTextNode(currentArrayElement.title);   
         var p = document.createElement('p');
         p.innerHTML = currentArrayElement.content;
     
@@ -63,13 +58,6 @@
     }
 
 })();
-//div.classList.add('highlighted');
-        //div.setAttribute('class', currentCategories);
-        //header.setAttribute('class', currentCategories);
-        //zamiast join() -> przeleciec manualnie po calej tablicy `categories` i dla kazdego
-        //jej elementu (czyli klasy) wykonac div.classList.add(klasa);
-    
-       
-        //header.classList.add('special-header');
+
 
        

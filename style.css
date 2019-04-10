@@ -5,7 +5,7 @@ div {
 .highlighted {
     background-color: cadetblue;
 }
-.special-header {
+.special-header header {
     background-color: rgb(191, 144, 235);
 }
 .important {
