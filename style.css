@@ -1,0 +1,13 @@
+div {
+    opacity: 0.7;
+    margin-bottom: 10px
+}
+.highlighted {
+    background-color: cadetblue;
+}
+.special-header header {
+    background-color: rgb(191, 144, 235);
+}
+.important {
+    opacity: 1;
+}
